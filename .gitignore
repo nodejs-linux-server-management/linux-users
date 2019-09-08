@@ -1,3 +1,6 @@
+# Vim
+*.vim
+
 # Logs
 logs
 *.log

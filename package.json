@@ -1,0 +1,38 @@
+{
+	"name": "linux-users",
+	"version": "0.0.1",
+	"description": "Linux user management wrapper",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "tsc && sudo mocha",
+		"prepare": "tsc && sudo mocha"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nodejs-linux-server-management/linux-users.git"
+	},
+	"keywords": [
+		"linux",
+		"user",
+		"management"
+	],
+	"author": "Alexandre Picavet",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/nodejs-linux-server-management/linux-users/issues"
+	},
+	"homepage": "https://github.com/nodejs-linux-server-management/linux-users#readme",
+	"dependencies": {
+		"linux-command-exists": "0.0.6-1",
+		"linux-package-manager": "0.0.2-1",
+		"linux-shell-command": "0.0.6"
+	},
+	"devDependencies": {
+		"@types/node": "^12.7.2",
+		"mocha": "^6.2.0",
+		"nyc": "^14.1.1",
+		"typescript": "^3.5.3"
+	}
+}
